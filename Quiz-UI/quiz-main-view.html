@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- landing-page -->
+    <section class="landing-page">
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To Master Quiz.</h1>
+                <a href="#quiz-packages" class="btn">Start</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- header-section -->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master-Quiz</h1>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#quiz-packages">Quiz</a>
+            <a href="#performer">Top Performers</a>
+            <a href="#notes">Notes</a>
+            <a href="#" id="profile-link" onclick="showProfile()">Profile</a>
+            <a href="#" id="logout-link" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <!-- quiz-packages-section -->
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis explicabo illo similique natus ad nostrum eos totam deleniti cupiditate illum, eius fuga iste repellat sit praesentium consequuntur unde reprehenderit architecto?</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src="./IMG/1-java.png" alt="card">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus delectus exercitationem eaque velit ut. Amet pariatur architecto quod culpa perspiciatis harum porro dolorum odio numquam, delectus qui perferendis cupiditate eveniet.</p>
+                <p class="card-heading">500₹</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+
+            <div class="package-card">
+                <img src="./IMG/4-python.jpg" alt="card">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus delectus exercitationem eaque velit ut. Amet pariatur architecto quod culpa perspiciatis harum porro dolorum odio numquam, delectus qui perferendis cupiditate eveniet.</p>
+                <p class="card-heading">600₹</p>
+                <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+            </div>
+                
+            <div class="package-card">
+                <img src="./IMG/2-js.png" alt="card">
+                <p class="card-heading">JavaScript</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus delectus exercitationem eaque velit ut. Amet pariatur architecto quod culpa perspiciatis harum porro dolorum odio numquam, delectus qui perferendis cupiditate eveniet.</p>
+                <p class="card-heading">700₹</p>
+                <button class="btn" onclick="startQuiz('java-script')">Take Quiz</button>
+            </div>
+                
+            <div class="package-card">
+                <img src="./IMG/3-net.png" alt="card">
+                <p class="card-heading">Dot Net</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus delectus exercitationem eaque velit ut. Amet pariatur architecto quod culpa perspiciatis harum porro dolorum odio numquam, delectus qui perferendis cupiditate eveniet.</p>
+                <p class="card-heading">800₹</p>
+                <button class="btn" onclick="startQuiz('dot-net')">Take Quiz</button>
+            </div>
+                
+        </div>
+     </section>
+
+     <!-- profile-section -->
+     <section class="profile-section" id="profile" style="display: none;">
+        <h1 class="quiz-heading">Profile</h1>
+        <div id="user-profile-info">
+            <!-- User profile info will be dynamically loaded here -->
+        </div>
+        <p>Your score: <span id="user-score">0</span></p>
+     </section>
+
+     <section class="performer-quiz-section" id="performer">
+        <h1 class="quiz-heading">Top performer</h1>
+        <p class="quiz-text">Our top performer are brightest minds who have consistently excellent.</p>
+        <div class="image-card">
+            <img src="./IMG/m1.jpg" alt="card">
+            <img src="./IMG/m2.jpg" alt="card">
+            <img src="./IMG/m3.jpg" alt="card">
+            <img src="./IMG/m4.jpg" alt="card">
+            <img src="./IMG/m5.jpg" alt="card">
+            <img src="./IMG/m6.jpg" alt="card">
+        </div>
+     </section>
+
+     <!-- notes-section -->
+      <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subjects Notes</h1>
+        <p class="quiz-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure obcaecati accusamus a praesentium laboriosam. Sapiente, ea esse dolor error placeat dolores qui adipisci iste voluptatibus corrupti rem? Vitae, unde est.</p>
+        <div class="notes-div">
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/spring.png" alt="card">
+                </div>
+            </a>
+            
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/dev.jpg" alt="card">
+                </div>
+            </a>
+            
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/java.jpg" alt="card">
+                </div>
+            </a>
+            
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/react.png" alt="card">
+                </div>
+            </a>
+           
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/go.jpg" alt="card">
+                </div>
+            </a>
+            
+            <a href="./RESOURCES/Demo-Notes.pdf" target="_blank">
+                <div class="notes-wrapper">
+                    <img src="./IMG/compiler.png" alt="card">
+                </div>
+            </a>
+           
+        </div>
+      </section>
+
+      <!-- footer-section -->
+      <footer class="footer-section">
+        <small>All Right Reserved</small>
+        <small>Developed  & Maintained By
+            <a href="https://www.linkedin.com/in/lakshminarayan-sirsath/" target="_blank">Lakshminarayan-Sirsath</a>
+        </small>
+    </footer>
+
+    <script src="./JS/quiz-main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+com\genie\quiz\entity\Options.class
+com\genie\quiz\dto\Question.class
+com\genie\quiz\QuizApplication.class
+com\genie\quiz\controller\LoginController.class
+com\genie\quiz\config\WebConfig.class
+com\genie\quiz\service\QuestionService.class
+com\genie\quiz\repo\QuestionRepo.class
+com\genie\quiz\dto\LoginRequest.class
+com\genie\quiz\entity\Question.class

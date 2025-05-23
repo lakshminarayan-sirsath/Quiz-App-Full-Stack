@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile Section */
+.profile-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text in the profile section */
+}
+
+/* Header Styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Back Button Styles */
+.back-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Information */
+#user-profile-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#user-profile-info p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Table Styles */
+#score-table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#score-table th, #score-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#score-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+#score-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#score-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Table Styles */
+@media (max-width: 768px) {
+    #score-table th, #score-table td {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
